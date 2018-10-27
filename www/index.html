@@ -2,6 +2,17 @@
 
 <head>
 
+  <script type="text/javascript">
+        function showProtocall() {
+
+            if (window.location.protocol != "https") {
+                window.location = "https://" + window.location.href.substring(window.location.protocol.length, window.location.href.length);
+                window.location.reload();
+            }
+        }
+        showProtocall();
+</script>
+
 <style type="text/css">
 
 
