@@ -3,14 +3,9 @@
 <head>
 
   <script type="text/javascript">
-        function showProtocall() {
-
-            if (window.location.protocol != "https") {
-                window.location = "https://" + window.location.href.substring(window.location.protocol.length, window.location.href.length);
-                window.location.reload();
-            }
-        }
-        showProtocall();
+    if(window.location.protocol != 'https:') {
+      location.href = location.href.replace("http://", "https://");
+    }
 </script>
 
 <style type="text/css">
