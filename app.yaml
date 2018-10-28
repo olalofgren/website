@@ -10,3 +10,5 @@ handlers:
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)
+
+version: 0.0.6
